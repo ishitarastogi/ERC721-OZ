@@ -7,5 +7,13 @@ contract VolcanoToken is ERC721, Ownable {
     constructor() ERC721("VolcanoToken", "VTC") {
     }
 
-    uint256 tokenId;
+    uint256 public tokenId;
+
+    struct tokenDetails{
+        uint timestamp;
+        string  tokenURI;
+        uint tokenId;
+    }
+
+
 }
